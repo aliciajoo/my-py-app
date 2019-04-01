@@ -11,6 +11,7 @@ def default():
 @app.route("/brexit")
 def handle_tweets():
 	data = getTweets()
+	print data
 	return render_template("brexit.html", data=data)
 
 if __name__ == "__main__":

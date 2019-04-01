@@ -1,0 +1,74 @@
+body {
+  background: #333;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  margin: auto;
+}
+
+cover-container {
+  margin: auto;
+}
+
+
+.btn--white {
+  color: #333;
+  background: white;
+  border-radius: 10px;
+  padding: 20px 30px;
+  font-weight: bold;
+}
+
+.lead {
+  padding: 20px 0;
+}
+
+.getTweets {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  max-width: 1010px;
+  width: 80%;
+  grid-gap: 30px 10px;
+  box-sizing: border-box;
+
+}
+
+.getTweets div {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.card{
+  background: white;
+  border: 2px solid lightgray;
+  color: #333;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.card-title {
+  margin-top: 0px;
+}
+
+.brexit-page-header {
+  margin-bottom: 40px;
+}
+
+.twitterprofilepic {
+  border-radius: 50%;
+  position: relative;
+  top: -30px;
+  border: 1px solid lightgray;
+  width: 60px;
+}

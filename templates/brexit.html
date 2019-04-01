@@ -1,0 +1,35 @@
+<!doctype html>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+<!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}"> -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+
+<html>
+    <head>
+        <title>Brexit Updates</title>
+    </head>
+
+    <body class="text-center text-shadow">
+      <h2 class="brexit-page-header"> Here's what people are saying about Brexit on Twitter: </h2>
+
+        <div class="getTweets">
+          {% for tweet in data %}
+          <div class="card">
+            <div class="card-body">
+              <img class="twitterprofilepic" src={{tweet.user.profile_image_url_https}} />
+              <h3 class="card-title">{{ tweet.user.name }} says: </h3>
+              <p class="card-text">{{ tweet.text }}</p>
+          </div>
+          </div>
+
+          {% else %}
+            <em>Unbelievable.  No entries here so far</em>
+              {% endfor %}
+        </div>
+
+    </body>
+ </html>
